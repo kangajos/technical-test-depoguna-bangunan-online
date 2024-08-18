@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  app:
+    container_name: dbo_api
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      - GIN_MODE=release # Example environment variable
